@@ -84,7 +84,7 @@ h2.title {
     font-weight: 700;
 }
 
-.promo .promo_btn {
+.promo .promo_btn, .present .present_btn {
     display: block;
     margin: 73px auto;
     margin-top: 73px;
@@ -106,6 +106,7 @@ h2.title {
     text-align: center;
     cursor: pointer;
     outline: none;
+    border-style: none;
 }
 
 .more {
@@ -130,12 +131,12 @@ h2.title {
 }
 
 .waiting {
-    height: 604px;
+    min-height: 604px;
     background-color: #efefef;
     padding: 85px 0 75px 0;
 }
 
-.waiting .waiting_header {
+.waiting .waiting_header, .finish .finish_header {
     color: #252525;
     text-align: center;
     font-family: Roboto;
@@ -146,7 +147,7 @@ h2.title {
     text-align: center;
 }
 
-.waiting .waiting_divider {
+.waiting .waiting_divider, .finish .finish_divider{
     width: 220px;
     height: 4px;
     background-color: #F9BF3B;
@@ -191,3 +192,201 @@ h2.title {
     margin-top: 26px;
 }
 
+.optimization {
+    position: relative;
+    min-height: 550px;
+    padding: 102px 0 107px 0;
+}
+
+.optimization .optimization_header {
+    margin-left: 391px;
+    color: #299CBD;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 30px; /* 100% */
+    text-transform: uppercase;
+    /* text-align: center; */
+}
+
+.optimization .optimization_text {
+    margin-top: 25px;
+    margin-left: 391px;
+    color: #4A4A4A;
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 27px; /* 158.824% */
+}
+
+.optimization .optimization_text span {
+    font-weight: 700;
+}
+
+.optimization .optimization_img {
+    position: absolute;
+    top: 54px;
+    left: -240px;
+    z-index: -1;
+}
+
+.finish {
+    min-height: 447px;
+    padding: 86px 0 79px 0;
+    background: url('../img/bg/second-bg.png') center center/cover no-repeat
+}
+
+.finish .finish_header {
+    color: #EFEFEF;
+}
+
+.finish .finish_wrapper {
+    margin-top: 41px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.finish .finish_wrapper .finish_item {
+    width: 204px;
+}
+
+.finish .finish_wrapper .finish_item .finish_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 118px;
+    height: 118px;
+    background-color: #B4E2FF;
+    border-radius: 100%;
+}
+
+.finish .finish_wrapper .finish_item .finish_descr {
+    margin-top: 25px;
+    text-align: center;
+    color: #EFEFEF;
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px; /* 117.647% */
+}
+
+.present {
+    min-height: 631px;
+    background-color: #EFEFEF;
+    padding: 88px 0 88px 0;
+}
+
+.present .present_img {
+    display: block;
+    margin: 0 auto;
+}
+
+.present .present_btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 51px;
+}
+
+.present .present_text {
+    margin-top: 45px;
+    color: #252525;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 43px; /* 143.333% */
+}
+
+.vebinar {
+    min-height: 512px;
+    background-color: #fff;
+}
+
+.vebinar .vebinar_img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 89px;
+    width: 342px;
+    height: 201px;
+}
+
+.vebinar .vebinar_subheader {
+    margin-top: 36px;
+    color: #252525;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 100% */
+    text-transform: uppercase;
+}
+
+.vebinar .vebinar_descr {
+    margin-top: 30px;
+    color: #299CBD;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 36px; /* 100% */
+    text-transform: uppercase;
+}
+
+.vebinar .vebinar_text {
+    margin-top: 25px;
+    color: #4A4A4A;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 86.957% */
+}
+
+.footer {
+    min-height: 169px;
+    padding: 57px 0 69px 0;
+    background-color: #1A1A1A;
+}
+
+.footer .footer_information {
+    display: block;
+    margin: 0 auto;
+    width: 345px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footer_information .footer_support, .footer_privacy, .footer_telephone {
+    color: #888;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 21px; /* 140% */
+    
+}
+
+.footer .footer_information .finish_divider {
+    background-color: #888;
+    width: 1px;
+    height: 12px;
+}
+
+.footer .footer_telephone a {
+    color: #888888;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+    text-decoration: none;
+}
